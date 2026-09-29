@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan A. Zambrano | Portfolio & Achievements</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <!-- Centered Top Header -->
+  <header class="top-navbar">
+    <div class="nav-container">
+      <div class="nav-branding">
+        <div class="mini-logo-group">
+          <img src="1.png" alt="PSU Logo" class="mini-logo">
+          <img src="2.png" alt="CECS Logo" class="mini-logo">
+          <img src="3.png" alt="BSIT Logo" class="mini-logo">
+        </div>
+        <div class="branding-text">
+          <span class="brand-title">Partido State University</span>
+          <span class="brand-subtitle">Department of Computer Studies</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Container -->
+  <main class="page-container">
+
+    <!-- SECTION 1: HERO / PROFILE -->
+    <section class="section-block hero-section" id="hero">
+      <div class="hero-card">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            OPERATIONAL PROFILE
+          </div>
+          <h1 class="profile-name">Ivan A. Zambrano</h1>
+          
+          <div class="details-grid">
+            <div class="detail-card">
+              <span class="detail-label">COURSE</span>
+              <span class="detail-value">BS Information Technology</span>
+            </div>
+            <div class="detail-card">
+              <span class="detail-label">SECTION</span>
+              <span class="detail-value">BSIT - 4E</span>
+            </div>
+            <div class="detail-card">
+              <span class="detail-label">SUBJECT</span>
+              <span class="detail-value">Seminars and Tours</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#webinars" class="btn-primary">
+              <span>View Seminars</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+            </a>
+            <a href="#badges" class="btn-secondary">
+              <span>View Badges</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-frame">
+          <img src="ivan.jpg" alt="Ivan A. Zambrano" class="profile-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SEMINARS & WEBINARS CAROUSEL -->
+    <section class="section-block" id="webinars">
+      <div class="section-header">
+        <span class="section-tag">01. LOGS & LEARNINGS</span>
+        <h2 class="section-heading">Seminars & Webinars</h2>
+        <p class="section-subheading">Documented technical training sessions, durations, and key outcomes.</p>
+      </div>
+
+      <div class="seminar-carousel-wrapper">
+        <button class="carousel-nav-btn prev-btn" onclick="changeSeminarSlide(-1)" aria-label="Previous Seminar">&larr;</button>
+
+        <div class="seminars-container">
+
+          <!-- Seminar 1 -->
+          <article class="seminar-card active">
+            <div class="seminar-header">
+              <span class="code-tag">SEMINAR_01</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3 class="seminar-title">INTRODUCTION TO CYBERSECURITY</h3>
+            <div class="seminar-meta">
+              <div><span class="lbl">Date:</span> <span class="val">September 8, 2026</span></div>
+              <div><span class="lbl">Duration:</span> <span class="val">6 Hours</span></div>
+              <div><span class="lbl">Organizer:</span> <span class="val">Cisco Networking Academy</span></div>
+            </div>
+            <p class="seminar-desc">Focused on protecting systems, networks, devices, and data from unauthorized access, cyberattacks, and digital threats.</p>
+            <div class="learnings-box">
+              <span class="learnings-title">Key Takeaways</span>
+              <p class="learnings-text">
+                This comprehensive session emphasized the critical role of proactive defensive measures within the modern global digital infrastructure. Understanding the dynamic threat landscape requires a multi-layered security approach, spanning endpoint protection, network boundary defenses, and user vigilance. The course thoroughly analyzed prevalent cyber attack vectors, such as advanced phishing campaigns, ransomware strains, and social engineering manipulations, illustrating how minor security oversights can result in massive organizational compromises. Furthermore, it stressed strict adherence to data privacy regulations, reinforcing the fundamental importance of maintaining confidentiality, integrity, and availability (the CIA triad) across both personal and enterprise computing environments.
+              </p>
+            </div>
+            <div class="action-row">
+              <button class="btn-proof" onclick="openProofModal(['cs1.png', 'cs2.png', 'cs3.png'])">View Proof (3 Images)</button>
+              <a href="Introduction_to_Cybersecurity_certificate_iazambrano-pbox-parsu-edu-ph_5c41a2ce-8b84-4b7a-b807-462ccce7d665.pdf" target="_blank" class="btn-link">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Seminar 2 -->
+          <article class="seminar-card">
+            <div class="seminar-header">
+              <span class="code-tag">SEMINAR_02</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3 class="seminar-title">COMPUTER HARDWARE BASICS</h3>
+            <div class="seminar-meta">
+              <div><span class="lbl">Date:</span> <span class="val">September 8, 2026</span></div>
+              <div><span class="lbl">Duration:</span> <span class="val">6 Hours</span></div>
+              <div><span class="lbl">Organizer:</span> <span class="val">Cisco Networking Academy</span></div>
+            </div>
+            <p class="seminar-desc">Covers fundamental concepts of physical computer components, system architecture, hardware identification, and essential maintenance practices.</p>
+            <div class="learnings-box">
+              <span class="learnings-title">Key Takeaways</span>
+              <p class="learnings-text">
+                This module provided a complete, hands-on overview of core computer hardware architecture, deconstructing how physical micro-components interact to process and store data efficiently. Detailed discussions covered Central Processing Unit (CPU) operation, Random Access Memory (RAM) speed dynamics, motherboard chipsets, and modern storage interfaces such as NVMe SSDs. In addition to component identification, the training highlighted systematic diagnostic protocols for hardware troubleshooting, emphasizing electrostatic discharge (ESD) safety practices and preventive maintenance routines to extend hardware lifespan. Mastery of standard expansion interfaces, peripheral connectivity standards, and power supply calculation rounded out the technical competencies acquired during this intensive training.
+              </p>
+            </div>
+            <div class="action-row">
+              <button class="btn-proof" onclick="openProofModal(['ch1.png', 'ch2.png', 'ch3.png'])">View Proof (3 Images)</button>
+              <a href="Computer_Hardware_Basics_certificate_iazambrano-pbox-parsu-edu-ph_2b0d350b-26cb-43c3-89fb-bef0339e60a0.pdf" target="_blank" class="btn-link">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Seminar 3 -->
+          <article class="seminar-card">
+            <div class="seminar-header">
+              <span class="code-tag">SEMINAR_03</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3 class="seminar-title">INTRODUCTION TO MODERN AI</h3>
+            <div class="seminar-meta">
+              <div><span class="lbl">Date:</span> <span class="val">September 9, 2026</span></div>
+              <div><span class="lbl">Duration:</span> <span class="val">6 Hours</span></div>
+              <div><span class="lbl">Organizer:</span> <span class="val">Cisco Networking Academy</span></div>
+            </div>
+            <p class="seminar-desc">Validates fundamental knowledge of modern artificial intelligence, machine learning principles, and generative model application.</p>
+            <div class="learnings-box">
+              <span class="learnings-title">Key Takeaways</span>
+              <p class="learnings-text">
+                Exploring the transformative landscape of artificial intelligence, this seminar unpacked the fundamental mathematical and algorithmic structures underpinning modern machine learning systems. It differentiated traditional analytical models from advanced neural network frameworks and generative deep learning architectures. A substantial portion was dedicated to practical prompt engineering techniques, demonstrating how precise context framing, zero-shot/few-shot examples, and parameters optimize conversational AI responses. Additionally, real-world deployment cases—including computer vision object recognition, automated language translation pipelines, and ethical considerations surrounding algorithmic bias—were thoroughly evaluated to ground theoretical concepts in practical IT applications.
+              </p>
+            </div>
+            <div class="action-row">
+              <button class="btn-proof" onclick="openProofModal(['ma1.png', 'ma2.png', 'ma3.png'])">View Proof (3 Images)</button>
+              <a href="Introduction_to_Modern_AI_certificate_iazambrano-pbox-parsu-edu-ph_179d4ecb-b9a3-4f4a-b236-d80fb8835a15.pdf" target="_blank" class="btn-link">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Seminar 4 -->
+          <article class="seminar-card">
+            <div class="seminar-header">
+              <span class="code-tag">SEMINAR_04</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3 class="seminar-title">CREATE DIGITAL CONTENT, COMMUNICATE AND COLLABORATE ONLINE</h3>
+            <div class="seminar-meta">
+              <div><span class="lbl">Date:</span> <span class="val">September 9, 2026</span></div>
+              <div><span class="lbl">Duration:</span> <span class="val">6 Hours</span></div>
+              <div><span class="lbl">Organizer:</span> <span class="val">Cisco Networking Academy</span></div>
+            </div>
+            <p class="seminar-desc">This seminar focuses on the essential skills required for effective digital content creation, online communication, and cloud-based collaboration in modern academic and professional environments. It provides a comprehensive guide to producing clear, accessible, and engaging digital media while utilizing productivity software and cloud platforms for efficient teamwork.</p>
+            <div class="learnings-box">
+              <span class="learnings-title">Key Takeaways</span>
+              <p class="learnings-text">
+                This comprehensive seminar addressed digital productivity within modern remote and hybrid workspaces, concentrating on cloud-based collaboration ecosystems and digital asset creation tools. It outlined best practices for online co-authoring, version control management, structured cloud file sharing, and project management integrations. Participants learned optimal digital media production techniques for business reporting and presentation development. Furthermore, the workshop covered remote communication etiquette, virtual meeting security settings, and digital asset licensing, equipping students to collaborate seamlessly within modern distributed engineering and business teams.
+              </p>
+            </div>
+            <div class="action-row">
+              <button class="btn-proof" onclick="openProofModal(['dc1.png', 'dc2.png', 'dc3.png'])">View Proof (3 Images)</button>
+              <a href="Create_Digital_Content-_Communicate_and_Collaborate_Online_certificate_iazambrano-pbox-parsu-edu-ph_5c3c8be7-08ca-4af5-836e-9450e102a908.pdf" target="_blank" class="btn-link">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Seminar 5 -->
+          <article class="seminar-card">
+            <div class="seminar-header">
+              <span class="code-tag">SEMINAR_05</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3 class="seminar-title">INTRODUCTION TO GREENHOUSE GAS ACCOUNTING FOR IT</h3>
+            <div class="seminar-meta">
+              <div><span class="lbl">Date:</span> <span class="val">September 9, 2026</span></div>
+              <div><span class="lbl">Duration:</span> <span class="val">3 Hours</span></div>
+              <div><span class="lbl">Organizer:</span> <span class="val">Cisco Networking Academy</span></div>
+            </div>
+            <p class="seminar-desc">Measuring, tracking, and reporting carbon emissions generated by IT infrastructure under GHG Protocol standards.</p>
+            <div class="learnings-box">
+              <span class="learnings-title">Key Takeaways</span>
+              <p class="learnings-text">
+                Addressing environmental sustainability within technology operations, this specialized course covered the standardized accounting metrics used to quantify carbon footprints across enterprise IT infrastructure. Following the internationally recognized Greenhouse Gas (GHG) Protocol, it explained how to categorize emissions into direct fuel combustion (Scope 1), purchased electricity consumption for servers and facilities (Scope 2), and value chain supply chain footprint (Scope 3). Key discussions highlighted practical green computing techniques, such as server virtualization, power usage effectiveness (PUE) metrics in data centers, hardware lifecycle management, and systematic baseline emissions tracking to satisfy modern corporate environmental compliance standards.
+              </p>
+            </div>
+            <div class="action-row">
+              <button class="btn-proof" onclick="openProofModal(['gh1.png', 'gh2.png', 'gh3.png'])">View Proof (3 Images)</button>
+              <a href="Introduction_to_Greenhouse_Gas_Accounting_for_IT_certificate_iazambrano-pbox-parsu-edu-ph_e83a9b9e-aaac-436c-96b1-ff3b474f9817.pdf" target="_blank" class="btn-link">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Seminar 6 -->
+          <article class="seminar-card">
+            <div class="seminar-header">
+              <span class="code-tag">SEMINAR_06</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3 class="seminar-title">INTRODUCTION TO IoT</h3>
+            <div class="seminar-meta">
+              <div><span class="lbl">Date:</span> <span class="val">September 8, 2026</span></div>
+              <div><span class="lbl">Duration:</span> <span class="val">6 Hours</span></div>
+              <div><span class="lbl">Organizer:</span> <span class="val">Cisco Networking Academy</span></div>
+            </div>
+            <p class="seminar-desc">This introductory seminar provides a foundational overview of the Internet of Things (IoT) ecosystem and its practical applications across modern industries. Participants explore how physical devices collect, exchange, and process data through interconnected networks to drive smart decision-making.</p>
+            <div class="learnings-box">
+              <span class="learnings-title">Key Takeaways</span>
+              <p class="learnings-text">
+                This course provided a comprehensive overview of the Internet of Things ecosystem, detailing the foundational four-tier architecture that links smart sensors, network infrastructure, edge computing, and cloud analytics. It highlighted how real-time telemetry from physical devices powers predictive decision-making and automated workflows across various industries. Participants examined the criteria for selecting suitable networking protocols—such as MQTT, CoAP, LoRaWAN, and Cellular—based on specific power, range, and bandwidth constraints. Finally, the session emphasized the critical role of end-to-end security, addressing essential strategies for endpoint protection, encrypted data transport, access control, and scalable over-the-air firmware management.
+              </p>
+            </div>
+            <div class="action-row">
+              <button class="btn-proof" onclick="openProofModal(['iot1.png', 'iot2.png', 'iot3.png'])">View Proof (3 Images)</button>
+              <a href="Introduction_to_IoT_certificate_iazambrano-pbox-parsu-edu-ph_990f9f62-79e5-436b-8eb3-4f7c5a834453.pdf" target="_blank" class="btn-link">View Certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Seminar 7 -->
+          <article class="seminar-card">
+            <div class="seminar-header">
+              <span class="code-tag">SEMINAR_07</span>
+              <span class="status-badge">Completed</span>
+            </div>
+            <h3 class="seminar-title">CREATE COMPELLING REPORTS</h3>
+            <div class="seminar-meta">
+              <div><span class="lbl">Date:</span> <span class="val">September 9, 2026</span></div>
+              <div><span class="lbl">Duration:</span> <span class="val">4 Hours</span></div>
+              <div><span class="lbl">Organizer:</span> <span class="val">Cisco Networking Academy</span></div>
+            </div>
+            <p class="seminar-desc">Teaches structural techniques for organizing data, crafting clear narratives, and formatting professional technical documentation for corporate stakeholder communication.</p>
+            <div class="learnings-box">
+              <span class="learnings-title">Key Takeaways</span>
+              <p class="learnings-text">
+                This session focused on essential techniques for structuring complex technical findings into persuasive, executive-ready documentation. It highlighted business analytical storytelling, effective data visualization choices, and clear narrative formatting for non-technical stakeholders. Participants practiced organizing raw technical metrics into structured executive summaries, defining actionable business insights, and employing standardized document layouts to ensure maximum clarity, impact, and organizational alignment.
+              </p>
+            </div>
+            <div class="action-row">
+              <button class="btn-proof" onclick="openProofModal(['cc1.png', 'cc2.png', 'cc3.png'])">View Proof (3 Images)</button>
+              <a href="Creating_Compelling_Reports_certificate_iazambrano-pbox-parsu-edu-ph_90dc6d4d-a692-40ae-8369-239a07fff333.pdf" target="_blank" class="btn-link">View Certificate ↗</a>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="carousel-nav-btn next-btn" onclick="changeSeminarSlide(1)" aria-label="Next Seminar">&gt;</button>
+      </div>
+
+      <div class="carousel-indicator">
+        <span id="seminarSlideCounter">Webinar 1 of 7</span>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CERTIFICATES -->
+    <section class="section-block" id="certificates">
+      <div class="section-header">
+        <span class="section-tag">02. CREDENTIALS</span>
+        <h2 class="section-heading">Earned Certificates</h2>
+        <p class="section-subheading">Official digital certification documents issuing course completions.</p>
+      </div>
+
+      <div class="media-grid">
+
+        <div class="media-card">
+          <div class="embed-wrapper">
+            <embed src="Introduction_to_Cybersecurity_certificate_iazambrano-pbox-parsu-edu-ph_5c41a2ce-8b84-4b7a-b807-462ccce7d665.pdf" type="application/pdf">
+          </div>
+          <div class="card-caption">
+            <h4>Introduction to Cybersecurity</h4>
+            <a href="Introduction_to_Cybersecurity_certificate_iazambrano-pbox-parsu-edu-ph_5c41a2ce-8b84-4b7a-b807-462ccce7d665.pdf" target="_blank">Open Full Document ↗</a>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="embed-wrapper">
+            <embed src="Computer_Hardware_Basics_certificate_iazambrano-pbox-parsu-edu-ph_2b0d350b-26cb-43c3-89fb-bef0339e60a0.pdf" type="application/pdf">
+          </div>
+          <div class="card-caption">
+            <h4>Computer Hardware Basics</h4>
+            <a href="Computer_Hardware_Basics_certificate_iazambrano-pbox-parsu-edu-ph_2b0d350b-26cb-43c3-89fb-bef0339e60a0.pdf" target="_blank">Open Full Document ↗</a>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="embed-wrapper">
+            <embed src="Introduction_to_Modern_AI_certificate_iazambrano-pbox-parsu-edu-ph_179d4ecb-b9a3-4f4a-b236-d80fb8835a15.pdf" type="application/pdf">
+          </div>
+          <div class="card-caption">
+            <h4>Introduction to Modern AI</h4>
+            <a href="Introduction_to_Modern_AI_certificate_iazambrano-pbox-parsu-edu-ph_179d4ecb-b9a3-4f4a-b236-d80fb8835a15.pdf" target="_blank">Open Full Document ↗</a>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="embed-wrapper">
+            <embed src="Create_Digital_Content-_Communicate_and_Collaborate_Online_certificate_iazambrano-pbox-parsu-edu-ph_5c3c8be7-08ca-4af5-836e-9450e102a908.pdf" type="application/pdf">
+          </div>
+          <div class="card-caption">
+            <h4>Create Digital Content, Communicate and Collaborate Online</h4>
+            <a href="Create_Digital_Content-_Communicate_and_Collaborate_Online_certificate_iazambrano-pbox-parsu-edu-ph_5c3c8be7-08ca-4af5-836e-9450e102a908.pdf" target="_blank">Open Full Document ↗</a>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="embed-wrapper">
+            <embed src="Introduction_to_Greenhouse_Gas_Accounting_for_IT_certificate_iazambrano-pbox-parsu-edu-ph_e83a9b9e-aaac-436c-96b1-ff3b474f9817.pdf" type="application/pdf">
+          </div>
+          <div class="card-caption">
+            <h4>Greenhouse Gas Accounting for IT</h4>
+            <a href="Introduction_to_Greenhouse_Gas_Accounting_for_IT_certificate_iazambrano-pbox-parsu-edu-ph_e83a9b9e-aaac-436c-96b1-ff3b474f9817.pdf" target="_blank">Open Full Document ↗</a>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="embed-wrapper">
+            <embed src="Introduction_to_IoT_certificate_iazambrano-pbox-parsu-edu-ph_990f9f62-79e5-436b-8eb3-4f7c5a834453.pdf" type="application/pdf">
+          </div>
+          <div class="card-caption">
+            <h4>Introduction to IoT</h4>
+            <a href="Introduction_to_IoT_certificate_iazambrano-pbox-parsu-edu-ph_990f9f62-79e5-436b-8eb3-4f7c5a834453.pdf" target="_blank">Open Full Document ↗</a>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="embed-wrapper">
+            <embed src="Creating_Compelling_Reports_certificate_iazambrano-pbox-parsu-edu-ph_90dc6d4d-a692-40ae-8369-239a07fff333.pdf" type="application/pdf">
+          </div>
+          <div class="card-caption">
+            <h4>Creating Compelling Reports</h4>
+            <a href="Creating_Compelling_Reports_certificate_iazambrano-pbox-parsu-edu-ph_90dc6d4d-a692-40ae-8369-239a07fff333.pdf" target="_blank">Open Full Document ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: BADGES CAROUSEL SLIDER -->
+    <section class="section-block" id="badges">
+      <div class="section-header">
+        <span class="section-tag">03. VERIFIED BADGES</span>
+        <h2 class="section-heading">Cisco NetAcad Badges</h2>
+        <p class="section-subheading">Digital skill badges awarded upon successfully passing technical evaluations.</p>
+      </div>
+
+      <div class="badge-carousel-wrapper">
+        <button class="carousel-nav-btn prev-btn" onclick="changeBadgeSlide(-1)" aria-label="Previous Badge">&larr;</button>
+
+        <div class="badges-container">
+
+          <!-- Badge 1 -->
+          <article class="badge-card-slide active">
+            <div class="badge-card-header">
+              <span class="code-tag">BADGE_01</span>
+              <span class="status-badge">Verified</span>
+            </div>
+            <div class="badge-card-body">
+              <div class="badge-img-frame">
+                <img src="introduction-to-cybersecurity.png" alt="Introduction to Cybersecurity">
+              </div>
+              <div class="badge-details">
+                <h3 class="badge-title">Introduction to Cybersecurity</h3>
+                <span class="badge-issuer">Cisco Networking Academy</span>
+                <p class="badge-desc">
+                  Issued upon verifying proficiency in foundational network defense principles, threat identification, digital vulnerability assessment, and risk management practices.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Badge 2 -->
+          <article class="badge-card-slide">
+            <div class="badge-card-header">
+              <span class="code-tag">BADGE_02</span>
+              <span class="status-badge">Verified</span>
+            </div>
+            <div class="badge-card-body">
+              <div class="badge-img-frame">
+                <img src="computer-hardware-basics.png" alt="Computer Hardware Basics">
+              </div>
+              <div class="badge-details">
+                <h3 class="badge-title">Computer Hardware Basics</h3>
+                <span class="badge-issuer">Cisco Networking Academy</span>
+                <p class="badge-desc">
+                  Certifies technical competence in computer architecture, hardware disassembly, preventive maintenance, component testing, and diagnostic troubleshooting.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Badge 3 -->
+          <article class="badge-card-slide">
+            <div class="badge-card-header">
+              <span class="code-tag">BADGE_03</span>
+              <span class="status-badge">Verified</span>
+            </div>
+            <div class="badge-card-body">
+              <div class="badge-img-frame">
+                <img src="introduction-to-modern-ai.png" alt="Introduction to Modern AI">
+              </div>
+              <div class="badge-details">
+                <h3 class="badge-title">Introduction to Modern AI</h3>
+                <span class="badge-issuer">Cisco Networking Academy</span>
+                <p class="badge-desc">
+                  Demonstrates understanding of machine learning models, neural networks, prompt engineering frameworks, and real-world enterprise AI implementation strategy.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Badge 4 -->
+          <article class="badge-card-slide">
+            <div class="badge-card-header">
+              <span class="code-tag">BADGE_04</span>
+              <span class="status-badge">Verified</span>
+            </div>
+            <div class="badge-card-body">
+              <div class="badge-img-frame">
+                <img src="create-digital-content-communicate-and-collaborate-.png" alt="Create Digital Content, Communicate and Collaborate Online">
+              </div>
+              <div class="badge-details">
+                <h3 class="badge-title">Create Digital Content, Communicate and Collaborate Online</h3>
+                <span class="badge-issuer">Cisco Networking Academy</span>
+                <p class="badge-desc">
+                  Validates core competencies in digital communication systems, internet safety protocols, information privacy protection, and cloud-based collaborative workflows.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Badge 5 -->
+          <article class="badge-card-slide">
+            <div class="badge-card-header">
+              <span class="code-tag">BADGE_05</span>
+              <span class="status-badge">Verified</span>
+            </div>
+            <div class="badge-card-body">
+              <div class="badge-img-frame">
+                <img src="ghg-accounting-for-it.png" alt="GHG Accounting for IT">
+              </div>
+              <div class="badge-details">
+                <h3 class="badge-title">GHG Accounting for IT</h3>
+                <span class="badge-issuer">Cisco Networking Academy</span>
+                <p class="badge-desc">
+                  Recognizes knowledge in greenhouse gas accounting metrics, datacenter power usage effectiveness (PUE), and IT infrastructure carbon footprint reduction strategies.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Badge 6 -->
+          <article class="badge-card-slide">
+            <div class="badge-card-header">
+              <span class="code-tag">BADGE_06</span>
+              <span class="status-badge">Verified</span>
+            </div>
+            <div class="badge-card-body">
+              <div class="badge-img-frame">
+                <img src="introduction-to-iot.png" alt="Introduction to IoT">
+              </div>
+              <div class="badge-details">
+                <h3 class="badge-title">Introduction to IoT</h3>
+                <span class="badge-issuer">Cisco Networking Academy</span>
+                <p class="badge-desc">
+                  Verifies foundational expertise in IoT architecture, telemetry data collection, sensor-network connectivity protocols, and edge-to-cloud security practices.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Badge 7 -->
+          <article class="badge-card-slide">
+            <div class="badge-card-header">
+              <span class="code-tag">BADGE_07</span>
+              <span class="status-badge">Verified</span>
+            </div>
+            <div class="badge-card-body">
+              <div class="badge-img-frame">
+                <img src="creating-compelling-reports.png" alt="Creating Compelling Reports">
+              </div>
+              <div class="badge-details">
+                <h3 class="badge-title">Creating Compelling Reports</h3>
+                <span class="badge-issuer">Cisco Networking Academy</span>
+                <p class="badge-desc">
+                  Validates proficiency in business analytics storytelling, executive summary structuring, data visualization selection, and technical documentation design.
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="carousel-nav-btn next-btn" onclick="changeBadgeSlide(1)" aria-label="Next Badge">&gt;</button>
+      </div>
+
+      <div class="carousel-indicator">
+        <span id="badgeSlideCounter">Badge 1 of 7</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Ivan A. Zambrano — Partido State University | BSIT Portfolio</p>
+  </footer>
+
+  <!-- Lightbox Proof Modal -->
+  <div id="proofModal" class="proof-modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeProofModal()"></div>
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeProofModal()">&times;</span>
+      <div id="proofGallery" class="gallery-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
